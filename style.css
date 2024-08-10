@@ -1,0 +1,972 @@
+/* Open Sans and Khand */
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Reset Open Sans font family */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+
+body {
+    background-color: #bb8080;
+    height: 95%;
+    margin: 0;
+    padding: 0;
+}
+
+.heading {
+    margin-bottom: 15vh;
+}
+
+.text {
+    margin-top: 6%;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    text-align: center;
+}
+
+.text h1 {
+    font-family: 'khand';
+    font-weight: 2.5rem;
+    font-weight: 500;
+}
+
+.text p {
+    font-family: 'Open Sans';
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.form-container {
+    background: #fff;
+    border: 5px solid #AD8B7B;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    height: 83vh;
+    width: 98%;
+    margin-left: 13.5px;
+    box-sizing: border-box;
+}
+
+.card-box {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+.cards {
+    height: 150px;
+    width: 150px;
+    margin-top: 5%;
+    background-color: #99ADB4;
+    border-radius: 10px;
+}
+
+.cards:hover {
+    border: 5px solid #BEBEBE;
+}
+
+.card-box a {
+    text-decoration: none;
+}
+
+.cards .p1 {
+    font-family: 'Open Sans';
+    font-size: 0.7rem;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0;
+    text-decoration: none;
+    color: black;
+}
+
+.cards .p2 {
+    font-family: 'Open Sans';
+    font-size: 0.7rem;
+    text-align: center;
+    color: #000;
+}
+
+.box-1 img {
+    height: 100px;
+    margin-left: 12%;
+    margin-top: 25%;
+}
+
+.box-2 {
+    background-color: #D7B5A6;
+}
+
+.box-2 img {
+    height: 88px;
+    margin-left: 8%;
+    margin-top: 25%;
+}
+
+.box-2 .p1 {
+    font-size: 0.7rem;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.box-2 .p2 {
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.form-step {
+    display: none;
+}
+
+.form-step.active {
+    display: block;
+     
+}
+
+
+.img-upper {
+    
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Ensures the images don't interfere with other elements */
+}
+
+.img-upper img {
+    position: absolute;
+    background: transparent;
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+}
+
+.img-upper img:first-child {
+    top: 140px; /* Adjust padding as needed */
+    left: 80px; /* Adjust padding as needed */
+}
+
+.img-upper img:last-child {
+    bottom: 100px; /* Adjust padding as needed */
+    right: 100px; /* Adjust padding as needed */
+}
+
+/* Step 1 End */
+
+/* Step 2 Start */
+
+/* Back Button Styling */
+
+button {
+    font-family: 'Open Sens';
+    border: none;
+}
+
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    padding: 15px 25px;
+    color: #AD8B7B;
+    background-color: transparent;
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-back i {
+    font-size: 13px;
+    margin-right: 8px;
+    margin-top: 4px;
+}
+
+.btn-back:hover {
+    color: #000;
+}
+
+.left-box {
+    margin-left: 8%;
+}
+
+.text-horse {
+    margin-top: 5%;
+}
+
+.text-horse h1 {
+    font-family: 'khand';
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #BD876F;
+}
+
+.text-horse p {
+    font-family: 'Open Sans';
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.text-name label {
+    font-family: 'khand';
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: 8%;
+}
+
+.text-name.contact label {
+    font-family: 'khand';
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: 1%;
+}
+
+.input-container {
+    position: relative;
+    width: 60%;
+}
+
+.text-name input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 120px;
+    border-radius: 10px;
+    border: 2px solid #AD8B7B;
+    outline: none;
+}
+
+.text-name input::placeholder {
+    font-family: 'khand';
+    font-size: 20px;
+    opacity: 0.3;
+}
+
+.proceed-btn {
+    font-family: 'Open Sans';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: small;
+    font-weight: 400;
+    padding: 14px;
+    width: 150px;
+    border-radius: 10px;
+    color: #E3D8BE;
+    background-color: #BD876F;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+}
+
+.proceed-btn:hover {
+    background-color: #e3d8be;
+    color: black;
+}
+
+.img-plain img {
+    position: absolute;
+    height: 340px;
+    margin-top: -25%;
+    margin-left: 65%;
+}
+
+
+.input-container-custom {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.input-container-custom input[type="text"] {
+    width: 48%;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.input-container-custom .proceed-btn-custom {
+    width: 20%;
+    text-align: center;
+    padding: 12px;
+    background-color: #BD876F;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    display: block;
+    margin-top: 15px;
+    box-sizing: border-box;
+}
+
+/* step 2 design room  */
+.text-contact{
+    display: flex;
+    flex-direction: row;
+    gap:20px; 
+    margin: 25px 0px; 
+}
+
+.input-container.mobile{
+    width:20%;
+}
+
+.input-container.email{
+    width:38.5%;
+}
+
+ 
+.proceed-btn-contact {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 14px;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    color: #E3D8BE;
+    background-color: #BD876F;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 80px; /* Added margin to separate from last input */
+}
+
+ 
+
+/* Step 2 End */
+
+/* Step 3 Start */
+
+.kid-name h1 {
+    font-family: 'khand';
+    font-size: 40px;
+    color: #BD876F;
+    margin-top: 3%;
+    margin-left: 10%;
+    line-height: 80px;
+}
+
+.kid-name a {
+    font-family: 'Open Sens';
+    text-decoration: none;
+}
+
+.btn-gender {
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 14px 75px;
+    border: 5px solid;
+    background-color: transparent;
+    margin-left:10%;
+    color: inherit;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-boy {
+    border-color: #98AEB5;
+    color: #98AEB5;
+    margin-right: 20px;
+}
+
+.btn-boy:hover {
+    background-color: #98AEB5;
+    color: #fff;
+    outline: none;
+}
+
+.btn-boy:active,
+.btn-boy:focus {
+    background-color: #98AEB5;
+    color: #fff;
+    outline: none;
+}
+
+.btn-girl {
+    border-color: #D7B5A6;
+    color: #D7B5A6;
+    margin-left: -0%;
+}
+
+.btn-girl:hover {
+    background-color: #D7B5A6;
+    color: #fff;
+    outline: none;
+}
+
+.btn-girl:active,
+.btn-girl:focus {
+    background-color: #D7B5A6;
+    color: #fff;
+    outline: none;
+}
+
+.kid-age h1 {
+    font-family: 'khand';
+    font-size: 40px;
+    color: #BD876F;
+    margin-top: 3%;
+    margin-left: 10%;
+    line-height: 80px;
+}
+
+.kid-age a {
+    text-decoration: none;
+}
+
+.btn-age {
+    font-family: 'khand';
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 10px 42px;
+    border: 5px solid #AD8B7B;
+    background-color: transparent;
+    color: inherit;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-age:hover {
+    background-color: #AD8B7B;
+    color: #fff;
+    outline: none;
+}
+
+.btn-age:active,
+.btn-age:focus {
+    background-color: #AD8B7B;
+    color: #fff;
+    outline: none;
+}
+
+.btn-1yr {
+    margin-left: 10%;
+    margin-right: 20px;
+}
+
+.btn-2yr {
+    margin-right: 20px;
+}
+
+.btn-enter {
+    margin-top: 5%;
+    margin-left: 284px;
+}
+
+.btn-enter a {
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 10px 50px;
+    background-color: #BD876F;
+    transition: background-color 0.3s, color 0.3s;
+    border: none;
+    color: #E3D8BE;
+    text-decoration: none;
+}
+
+.btn-enter a:hover {
+    background-color: #E3D8BE;
+    color: #000;
+    outline: none;
+}
+
+.btn-enter a:active,
+.btn-enter a:focus {
+    background-color: #E3D8BE;
+    color: #000;
+    outline: none;
+}
+
+.shapes img {
+    position: absolute;
+    margin-top: -20%;
+    margin-left: 61%;
+    width: 30%;
+    pointer-events: none;
+}
+
+.shapess img {
+    position: absolute;
+    margin-top: -30%;
+    margin-left: 61%;
+    width: 30%;
+    pointer-events: none;
+}
+
+/* Step 3 Ends */
+
+/* Step 4 Starts */
+
+.desc-title h1 {
+    font-family: 'Khand', sans-serif;
+    color: #BD876F;
+    margin-top: 8%;
+    margin-left: 10%;
+}
+
+.desc-title .desc-p {
+    margin: 0;
+    padding: 0;
+    margin-left: 10%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn-desc {
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.btn-desc button {
+    font-family: 'Open Sans';
+    color: #E3D8BD;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: #BD876F;
+    border-radius: 10px;
+    padding: 10px 50px;
+}
+
+.btn-desc button:hover {
+    background-color: #E3D8BE;
+    color: #000;
+    outline: none;
+}
+
+.btn-desc button:active,
+.btn-desc button:focus {
+    background-color: #E3D8BE;
+    color: #000;
+    outline: none;
+}
+
+
+/* step 4(2) */
+.desc-quotes{
+    font-style: italic;
+    margin-top: 4%;
+    margin-left: 10%;
+}
+
+/* Step 4 Ends */
+
+/* Step 5 Starts  */
+
+.text-1 {
+    margin-top: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    text-align: center;
+}
+
+.text-1 h1 {
+    font-family: 'khand';
+}
+
+.text-1 p {
+    font-family: 'Open Sans';
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.card-box-1 {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.cards-1 {
+    height: 150px;
+    width: 150px;
+    margin-top: 1%;
+    background-color: #99ADB4;
+    border-radius: 10px;
+}
+
+.cards-1:hover {
+    border: 6px solid #BD876F;
+}
+
+.cards-1 .p-p1 {
+    font-family: 'Open Sans';
+    font-size: 11px;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 0;
+}
+
+.p-box-1 {
+    background-color: white;
+    border: 2px solid #BD876F;
+}
+
+.p-box-1 img {
+    height: 100px;
+    margin-left: 30%;
+    margin-top: 18%;
+}
+
+.p-box-2 {
+    background-color: white;
+    border: 2px solid #BD876F;
+}
+
+.p-box-2 img {
+    height: 88px;
+    margin-left: 28%;
+    margin-top: 22%;
+}
+
+.p-box-3 {
+    background-color: white;
+    border: 2px solid #BD876F;
+
+}
+
+.p-box-3 img {
+    height: 88px;
+    margin-left: 15%;
+    margin-top: 25%;
+}
+
+.p-box-2 .p-p1 {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 0;
+
+}
+
+.card-box-1 a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .card-box {
+        gap: 15%;
+    }
+    .cards {   
+        margin-top: 15%;     
+    }
+    .img-plain img {
+        height: 350px;
+        margin-top: 30%;
+        margin-left: 25%;
+    }
+    .shapes img {
+        margin-left: 25%;
+        width: 300px;
+    }
+    .btn-enter {
+        margin-left: 150px;
+    }
+    .img-upper {
+        visibility: hidden;
+    }
+    
+    /* step 2 design room  */
+
+    .text-contact {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .input-container.mobile,
+    .input-container.email {
+        width: 100%;
+    }
+
+    .proceed-btn-contact {
+        margin-top: 60px;
+        width: 100%;
+        max-width: 180px;
+    }
+
+    /* .img-plain img {
+         
+        margin-top: 30%;  
+        display: block;
+    } */
+
+
+
+    /* start 3 */
+    .kid-name h1, .kid-age h1 {
+        font-size: 30px;
+        margin-left: 5%;
+        line-height: 60px;
+    }
+    .kid-name a, .kid-age a {
+        font-size: 16px;
+        padding: 12px 30px;
+    }
+    .btn-gender {
+        padding: 12px 30px;
+        margin-left: 5%;
+        margin-right: 15px;
+    }
+    .btn-age {
+        padding: 12px 30px;
+        margin-left: 5%;
+        margin-right: 15px;
+    }
+    .btn-enter {
+        margin-top: 8%;
+        margin-left: 10%;
+    }
+    .btn-enter a {
+        padding: 12px 40px;
+        font-size: 16px;
+    }
+    .shapes img {
+        margin-top: -15%;
+        margin-left: 55%;
+        width: 40%;
+    }
+
+    /* end 3  */
+    
+
+    
+
+} 
+
+@media (max-width: 576px) {
+
+    .form-container{
+        height: 100%;
+        width:100%;
+        margin:0;
+    } 
+    .card-box {
+        flex-direction: column;
+        align-items: center;
+        margin: 30px;
+        gap: 10px;
+    }
+    .cards {
+        height: 100%;
+        width: 100%;
+        margin-top: 5%;
+    }
+    .cards .p1{
+        font-size:1.0rem;
+    }
+    .cards .p2{
+        font-size:1.0rem;
+    }
+    .img-plain img {
+        height: 250px;
+        margin-top: 20%;
+        margin-left: 23%;
+        padding-bottom: 10%;
+    }
+    .input-container{
+        width:90%;
+        margin-right:25px;
+    }
+    .input-container.contact{
+        width:70%;
+    }
+    .box-1 img{
+        margin-left:30%;
+        margin-top:20%;
+    }
+    .box-2 img{
+        margin-left:30%;
+        margin-top:20%;
+    }
+    .box-2 .p1{
+        font-size: 1.0rem;
+    }
+    .shapes img {
+        margin-top: 20px;
+        margin-left: 15%;
+        width: 200px;
+    }
+    .btn-enter {
+        margin-left: 100px;
+    }
+    .text-horse h1 {
+        font-size: 2rem;
+    }
+    .proceed-btn {
+        width: 100px;
+        font-size: 12px;
+        padding: 10px;
+    }
+    .text-name{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+         margin-top:20px;
+    }
+    .text-name label{
+        margin-right:7%;
+    }
+    .text-name input {
+        padding-right: 80px;
+    }
+    .left-box{
+        padding-bottom:10%;
+    }
+
+    .img-upper {
+        visibility: hidden;
+    }
+    
+
+    /* step 2 design room contact */
+    .input-container.contact {
+        width: 91%;
+    }
+
+    .text-contact {
+        flex-direction: column;
+        gap: 8px;
+        margin-right:28px;
+    }
+
+    .input-container.mobile,
+    .input-container.email {
+        width: 100%;
+    }
+
+    .proceed-btn-contact {
+        margin-top: 50px;
+        width: 100%;
+        max-width:92%;;
+    }
+
+    .input-container-custom {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 92%;
+    }
+
+    .input-container-custom input[type="text"] {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .input-container-custom .proceed-btn-custom {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+        background-color: #BD876F;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        display: block;
+        margin-top: 15px;
+        box-sizing: border-box;
+    }
+
+    /* start 3  */
+    .kid-name h1, .kid-age h1 {
+        font-size: 24px;
+        margin-left: 5%;
+        line-height: 40px;
+    }
+    .kid-name a, .kid-age a {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .kid-age{
+        margin-top:40px;
+        margin-bottom: 40px;
+    }
+
+    .btn-gender {
+        padding: 10px 20px;
+        margin-left: 5%;
+        margin-right: 10px;
+    }
+    .btn-age {
+        padding: 10px 20px;
+        margin-left: 5%;
+        margin-right: 10px;
+    }
+    .btn-enter {
+        margin-top: 15%;
+        margin-bottom: 10%;
+        margin-left: 5%;
+    }
+    .btn-enter a {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .shapess img {
+        margin-top: 10%;
+        margin-left: 25%;
+        padding-bottom: 20px;
+        width: 50%;
+    }
+
+    /* end 3  */
+
+
+    /* start 4 */
+
+    .btn-desc {
+        margin: 20px;
+        text-align: center;
+    }
+    .btn-desc button {
+        font-size: 14px;
+        padding: 10px 30px;
+        width: 90%;
+    }
+
+    /* end 4  */
+
+
+    /* start 5  */
+    .text-1 {
+        margin-top: 4%;
+        width: 90%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .text-1 h1 {
+        font-size: 20px;
+    }
+    .text-1 p {
+        font-size: 14px;
+        margin-bottom: 5%;
+    }
+    .card-box-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+        padding: 40px;
+    }
+    .cards-1 {
+        height: 120px;
+        width: 120px;
+        margin-top: 2%;
+    }
+    .cards-1 .p-p1 {
+        font-size: 10px;
+        margin-top: 45px;
+    }
+    .p-box-1 img, .p-box-2 img, .p-box-3 img {
+        height: 70px;
+        margin: auto;
+        display: block;
+        margin-top: 15px;
+    }
+
+    /* end 5  */
+
+}

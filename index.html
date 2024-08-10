@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Step Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="heading"></div>
+    </header>
+
+
+    <main>
+
+        <div class="form-container">
+            <form id="multiStepForm">
+                <!-- Step 1 -->
+                <div class="form-step" id="step-1">
+                    <div class="img-upper">
+                        <img src="assets/images/circle.png" alt="plain">
+                        <img src="assets/images/heart.png" alt="plain">
+                    </div>
+                    <div class="text">
+                        <h1>Hey there, Welcome to FINI!</h1>
+                        <p>Let us help you discover the perfect</p>
+                        <p>products and services</p>
+                    </div>
+                    <div class="card-box">
+                        <a href="javascript:void(0)" class="box-1 cards" onclick="nextStep(2,event)">
+                            <img src="assets/images/horse.png" alt="horse">
+                            <p class="p1">I am looking for baby</p>
+                            <p class="p2">products</p>
+                        </a>
+                        <a href="javascript:void(0)" class="box-2 cards" onclick="nextStep(22,event)">
+                            <img src="assets/images/house.png" alt="house">
+                            <p class="p1">I want help in designing</p>
+                            <p class="p2">room for my baby</p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Step 2  baby product-->
+                <div class="form-step box" id="step-2">
+                    <button type="button" class="btn-back PREV-1" onclick="prevStep(1,event)">  
+                        <i class="fa-solid fa-less-than"></i> BACK
+                    </button>
+                    <div class="left-box">
+                        <div class="text-horse">
+                            <h1>YOU ARE AT THE RIGHT PLACE!</h1>
+                            <p>Fini is your destination where you will find products for your baby, that</p>
+                            <p>supports their growth - mentally and physically. Products that are safe for</p>
+                            <p>your baby and the environment.</p>
+                        </div>
+                        <div class="text-name">
+                            <label for="name">ENTER THE NAME OF BABY</label>
+                            <div class="input-container">
+                                <input type="name" id="name" name="name" placeholder="ENTER TEXT HERE" required>
+                                <a href="javascript:void(0)" class="proceed-btn NEXT-2(2)" onclick="nextStep(3,event)">PROCEED</a>
+                            </div>
+                            <div class="img-plain">
+                                <img src="assets/images/plain.png" alt="plain">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 age select -->
+                <div class="form-step" id="step-3">
+                    <button type="button" class="btn-back" onclick="prevStep(2,event)">
+                        <i class="fa-solid fa-less-than"></i> BACK
+                    </button>
+                    <div class="kid-name">
+                        <h1>KUSH IS...</h1>
+                        <a href="#" id="btn-boy" class="btn-boy btn-gender" onclick="selectGender('Boy')">A
+                            BOY</a>
+                        <a href="#" id="btn-girl" class="btn-girl btn-gender" onclick="selectGender('Girl')">A
+                            GIRL</a>
+                    </div>
+                    <div class="kid-age">
+                        <h1>WITH AGE</h1>
+                        <a href="#" id="btn-1yr" class="btn-1yr btn-age NEXT-4(1)" onclick="nextStep(41,event)">0-1
+                            YRS</a>
+                        <a href="#" id="btn-2yr" class="btn-2yr btn-age NEXT-4(2)" onclick="nextStep(42,event)">1-3
+                            YRS</a>
+                        <a href="#" id="btn-3yr" class="btn-3yr btn-age NEXT-4(3)" onclick="nextStep(43,event)">4+
+                            YRS</a>
+                    </div>
+                    
+                    <div class="shapes">
+                        <img src="assets/images/rectangle.png" alt="Shape">
+                    </div>
+                </div>
+
+
+                <!-- Step 2 design room-->
+                <div class="form-step box" id="step-22">
+                    <button type="button" class="btn-back PREV-1" onclick="prevStep(1,event)">
+                        <i class="fa-solid fa-less-than"></i> BACK
+                    </button>
+                    <div class="left-box">
+                        <div class="text-horse">
+                            <h1>YOU ARE AT THE RIGHT PLACE!</h1>
+                            <p>Fini is your destination where you will find products for your baby, that</p>
+                            <p>supports their growth - mentally and physically. Products that are safe for</p>
+                            <p>your baby and the environment.</p>
+                        </div>
+                        <div class="text-name">
+                            <label for="name">ENTER THE NAME AND AGE OF BABY</label>
+                            <div class="input-container-custom">
+                                <input type="text" id="name" name="name" placeholder="NAME" required>
+                                <input type="text" id="name" name="name" placeholder="AGE" required>
+                                <a href="javascript:void(0)" class="proceed-btn-custom NEXT-2(2)" onclick="nextStep(23,event)">PROCEED</a>
+                            </div>
+                            <div class="img-plain">
+                                <img src="assets/images/plain.png" alt="plain">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Step 23 want help in design -->
+                 <div class="form-step" id="step-23">
+                    <div class="text">
+                        <h1>I Want help in designing</h1>                       
+                    </div>
+                    <div class="card-box">
+                        <a href="javascript:void(0)" class="box-1 cards" onclick="nextStep(24,event)">
+                            <img src="assets/images/horse.png" alt="horse">
+                            <p class="p1">A section of room</p>                            
+                        </a>
+                        <a href="javascript:void(0)" class="box-2 cards" onclick="nextStep(24,event)">
+                            <img src="assets/images/house.png" alt="house">
+                            <p class="p1">An entire room</p>                          
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Step 24 budget-->
+                <div class="form-step box" id="step-24">
+                    <button type="button" class="btn-back PREV-23" onclick="prevStep(23,event)">
+                        <i class="fa-solid fa-less-than"></i> BACK
+                    </button>
+                    <div class="left-box">
+                        <div class="text-horse">
+                            <h1>WHAT BUDGET DO YOU HAVE IN MIND?</h1>
+                             
+                        </div>
+                        <div class="text-name">
+                            <label for="name">ENTER YOUR BUDGET</label>
+                            <div class="input-container">
+                                <input type="name" id="name" name="name" placeholder="ENTER TEXT HERE" required>
+                                <a href="javascript:void(0)" class="proceed-btn NEXT-2(2)" onclick="nextStep(25,event)">PROCEED</a>
+                            </div>
+                            <div class="img-plain">
+                                <img src="assets/images/plain.png" alt="plain">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Step 25 CONTACT FORM -->
+                 <div class="form-step box" id="step-25">
+                    <button type="button" class="btn-back" onclick="prevStep(24,event)">
+                        <i class="fa-solid fa-less-than"></i> BACK
+                    </button>
+                    <div class="left-box">
+                        <div class="text-horse">
+                            <h1>AWESOME!</h1>
+                            <p>Let us know ways to connect and our expert advisor will</p>
+                            <p>reach out to guide you through your room makeover.</p>
+                             
+                        </div>
+                        <div class="text-name contact">
+                            <label for="name">Your name</label>
+                             
+                            <div class="input-container contact">
+                                <input type="text" id="name" name="name" placeholder="ENTER TEXT HERE" required>
+                            </div>
+                            <div class="text-contact">
+                                <div class="input-container mobile">
+                                    <label for="mobile">Mobile</label>
+                                    <input type="text" id="name" name="name" placeholder="ENTER TEXT HERE" required>
+                                </div>
+                                <div class="input-container email">
+                                    <label for="email">Email</label>
+                                    <input type="text" id="name" name="name" placeholder="ENTER TEXT HERE" required>
+                                </div>
+                            </div>
+
+
+                            <a href="javascript:void(0)" class="proceed-btn-contact" onclick="nextStep(1,event)">TALK TO ADVISOR</a>
+                            <div class="img-plain">
+                                <img src="assets/images/plain.png" alt="plain">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                
+
+                <!-- Step 4(1)  age 0-1 -->
+                <div class="form-step" id="step-41">
+                    <button type="button" class="btn-back PREV-3" onclick="prevStep(3, event)">
+                        <i class="fa-solid fa-less-than"></i> BACK
+                    </button>
+                    <div class="desc-title">
+                        <h1>DID YOU KNOW?</h1>
+                        <p class="desc-p">It’s incredible that newborns are just amazing little people</p>
+                        <p class="desc-p">from birth. The moment they are born, they have the</p>
+                        <p class="desc-p">to develop themselves.</p>
+                    </div>
+                    <div class="btn-desc NEXT-5(1)">
+                        <button type="button" onclick="nextStep(51, event)">PROCEED</button>
+                    </div>
+                    <div class="shapes">
+                        <img src="assets/images/toys.png" alt="Toy">
+                    </div>    
+                </div>
+
+                <!-- Step 4(2) age 1-3 -->
+                <div class="form-step" id="step-42">
+                    <button type="button" class="btn-back PREV-3" onclick="prevStep(3,event)">
+                       
+                        <i class="fa-solid fa-less-than"></i> BACK
+                    </button>
+                    <div class="desc-title">
+                        <h1>AHA, ALL SET TO EXPLORE?</h1>
+                        <p class="desc-p">Toddler age is extremely challenging. When placed in a specially </p>
+                        <p class="desc-p">prepared environment children thrive</p>                       
+                    </div>
+                    <div class="desc-quotes">
+                        <p>"It follows that at the beginning of his life the individual can accomplish</p>
+                        <p> Wonders - without effort and quite unconsciously".</p>
+                        <p>-Maria Montessori</p>
+
+                    </div>
+                    <div class="btn-desc NEXT-5(2)">
+                        <button type="button" onclick="nextStep(52,event)">PROCEED</button>
+                    </div>
+                    <div class="shapess">
+                        <img src="assets/images/toys.png" alt="Toy">
+                    </div>    
+                </div>
+
+                <!-- Step 4(3) age-4+ -->
+                <div class="form-step" id="step-43">
+                    <button type="button" class="btn-back PREV-3" onclick="prevStep(3,event)">
+                        <i class="fa-solid fa-less-than"></i> BACK
+                    </button>
+                    <div class="desc-title">
+                        <h1>Did you know?</h1>
+                        <p class="desc-p">At the age of 4 and above, children show preferences for specific</p>
+                        <p class="desc-p">hobbies and activities, such as sports, arts and crafts, music, or outdoor</p>
+                        <p class="desc-p">exploration. They may begin to develop talents and interests that</p>  
+                        <p class="desc-p">shape their identity</p>                     
+                    </div>
+                     
+                    <div class="btn-desc NEXT-5(3)">
+                        <button type="button" onclick="nextStep(53,event)">PROCEED</button>
+                    </div>                   
+                        <div class="shapes">
+                            <img src="assets/images/toys.png" alt="Toy">
+                        </div>                    
+                </div>
+
+
+
+                
+
+                <!-- Step 5 (1) -->
+                <div class="form-step" id="step-51">
+                    <button type="button" class="btn-back" onclick="prevStep(3,event)">
+                        <i class="fa-solid fa-less-than  PREV-4(1)"></i> BACK
+                    </button>
+                    <div class="text-1">
+                        <h1>WHAT ARE YOU LOOKING FOR KUSH?</h1>
+                        <p>PRODUCTS RELATED TO…</p>
+                    </div>
+                    <div class="card-box-1">
+                        <a href="javascript:void(0)" class="p-box-1 cards-1" onclick="">
+                            <img src="assets/images/girl.png" alt="girl">
+                            <p class="p-p1">BETTER SLEEP</p>
+                        </a>
+                        <a href="javascript:void(0)" class="p-box-2 cards-1" onclick="">
+                            <img src="assets/images/furniture.png" alt="furniture">
+                            <p class="p-p1">FURNITURE AND INTERIOR</p>
+                        </a>
+                        <a href="javascript:void(0)" class="p-box-3 cards-1" onclick="">
+                            <img src="assets/images/band.png" alt="band">
+                            <p class="p-p1">PHYSICAL HEALTH</p>
+                        </a>
+                    </div>
+
+
+                      <!-- Step 5 (2) -->
+                 <div class="form-step" id="step-52">
+                    <button type="button" class="btn-back" onclick="prevStep(3,event)">
+                        <i class="fa-solid fa-less-than  PREV-4(1)"></i> BACK
+                    </button>
+                    <div class="text-1">
+                        <h1>WHAT ARE YOU LOOKING FOR KUSH?</h1>
+                        <p>PRODUCTS RELATED TO…</p>
+                    </div>
+                    <div class="card-box-1">
+                        <a href="javascript:void(0)" class="p-box-1 cards-1" onclick="">
+                            <img src="assets/images/girl.png" alt="girl">
+                            <p class="p-p1">BETTER SLEEP</p>
+                        </a>
+                        <a href="javascript:void(0)" class="p-box-2 cards-1" onclick="">
+                            <img src="assets/images/furniture.png" alt="furniture">
+                            <p class="p-p1">FURNITURE </p>
+                        </a>
+                        <a href="javascript:void(0)" class="p-box-3 cards-1" onclick="">
+                            <img src="assets/images/band.png" alt="band">
+                            <p class="p-p1">PHYSICAL HEALTH</p>
+                        </a>
+                    </div>
+
+               
+
+                <!-- Step 5(3) -->
+                <div class="form-step" id="step-53">
+                    <button type="button" class="btn-back" onclick="prevStep(3,event)">
+                        <i class="fa-solid fa-less-than PREV-4(3)"></i> BACK
+                    </button>
+                    <div class="text-1">
+                        <h1>WHAT ARE YOU LOOKING FOR KUSH?</h1>
+                        <p>PRODUCTS RELATED TO…</p>
+                    </div>
+                    <div class="card-box-1">
+                        <a href="javascript:void(0)" class="p-box-1 cards-1" onclick="">
+                            <img src="assets/images/girl.png" alt="girl">
+                            <p class="p-p1">MENTAL HEALTH</p>
+                        </a>
+                        <a href="javascript:void(0)" class="p-box-2 cards-1" onclick="">
+                            <img src="assets/images/furniture.png" alt="furniture">
+                            <p class="p-p1">FURNITURE </p>
+                        </a>
+                        <a href="javascript:void(0)" class="p-box-3 cards-1" onclick="">
+                            <img src="assets/images/band.png" alt="band">
+                            <p class="p-p1">PLAY</p>
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
